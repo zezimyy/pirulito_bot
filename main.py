@@ -54,6 +54,7 @@ def abraço(mensagem):
 #comando chute
 @bot.message_handler(commands=["chute", "Chute"])
 def chute(mensagem):
+  bot.send_message(mensagem.chat.id, "Você chutou André!")
   bot.send_message(chat_id, "{} te chutou".format(mensagem.chat.first_name))
 
 
